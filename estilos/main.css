@@ -70,9 +70,14 @@ main {
 
 .form__btn {
     width: 70px;
-    display: flex;
     padding: 7px 12px;
-    margin: 20px 0 ;
+    display: flex;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: white;
+
 }
 
 .remember {
