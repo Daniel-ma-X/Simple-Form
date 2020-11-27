@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../images/fondo-principal.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+.contenido {
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 90vw;
+    max-width: 300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.60);
+    padding: 5px;
+}
+
+/*Header*/
+
+.header .logo h1 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #1A5276;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*Main*/
+
+main {
+    display: block;
+}
+
+.form__subtitle h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.form__subtitle h2 span {
+    color: #1A5276;
+}
+
+.form form input {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #1A5276;
+}
+
+::placeholder {
+    padding-left: 15px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #1A5276;
+}
+
+.form__btn {
+    width: 70px;
+    display: flex;
+    padding: 7px 12px;
+    margin: 20px 0 ;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.remember__last p a{
+    text-decoration: none;
+    color: #1A5276;
+    cursor: pointer;
+}
+
+.remember__last p a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/*Section Redes*/
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.redes__google, .redes__facebook {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.redes__google a, .redes__facebook a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.redes__google a span {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    padding: 0 2px 0 0;
+}
+
+.redes__facebook a span {
+    color: #3498db;
+    font-size: 1.8rem;
+}
+
+/*Footer*/
+
+.footer {
+    margin: 8px 0;
+}
+
+.footer a {
+    font-size: 1.5rem;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*Media queries--420px*/
+@media screen and (min-width: 420px) {
+    .remember, .redes {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
